@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>simply calculator</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet"> 
+   <script type="text/javascript" src="js/calculate.js"></script>
+   </head>
+   <body>
+      <form>
+         <div class="calculatorframe">
+            <input type="text" id="display-val" placeholder="0" readonly>
+         
+         <div class="keyboard">
+            <div>
+               <input type="button" value="7" onclick='math("7")'>
+               <input type="button" value="8" onclick='math("8")'>
+               <input type="button" value="9" onclick='math("9")'>
+               <input type="button" value="&#247" onclick='math("/")'>
+            </div>
+            <div>
+               <input type="button" value="4" onclick='math("4")'>
+               <input type="button" value="5" onclick='math("5")'>
+               <input type="button" value="6" onclick='math("6")'>
+               <input type="button" value="&#215" onclick='math("*")'>
+            </div>
+            <div>
+               <input type="button" value="1" onclick='math("1")'>
+               <input type="button" value="2" onclick='math("2")'>
+               <input type="button" value="3" onclick='math("3")'>
+               <input type="button" value="&#8722" onclick='math("-")'>
+            </div>
+            <div>
+               <input type="button" value="0" onclick='math("0")'>
+               <input type="button" value="." onclick='math(".")'>
+               <input type="button" value="AC" onclick='calc("")'>
+               <input type="button" value="&#43" onclick='math("+")'>
+            </div>
+            <div>
+               <input type="button" value="&#8676" onclick="backspace()">
+               <input type="button" value="&#61" onclick='err()'>
+            </div>
+         </div>
+      </div>
+      </form>
+
+      
+   </body>
+</html>
+
